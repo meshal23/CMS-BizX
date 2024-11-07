@@ -120,8 +120,8 @@ export default function ItemCreationThree() {
   const navigate = useNavigate();
 
   //uploadImage states
-  const [files, setFiles] = useState<any>(null);
-  const [uploadImage, setUploadImage] = useState([]);
+  // const [files, setFiles] = useState<any>(null);
+  // const [uploadImage, setUploadImage] = useState([]);
 
   useEffect(() => {
     setValue("filePath", imagePath);
