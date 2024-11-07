@@ -49,7 +49,7 @@ function Login() {
   return (
     <section className="flex items-center justify-center w-full h-screen bg-blue-50">
       <Toaster position="top-center" reverseOrder={false} />
-      <div className="flex items-center justify-center mx-2 h-3/4 desktop:w-2/5 pocket:max-desktop:w-full">
+      <div className="flex items-center justify-center mx-2 motion-preset-slide-up motion-duration-1500 motion-ease-spring-bouncy h-3/4 desktop:w-2/5 pocket:max-desktop:w-full">
         <Form
           className="w-full p-4 space-y-6 bg-white desktop:shadow-lg h-3/4 pocket:max-desktop:border-2 pocket:max-desktop:rounded-lg "
           method="post"
@@ -90,7 +90,7 @@ function Login() {
           <button
             disabled={state === "submitting"}
             type="submit"
-            className={`w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${
+            className={`w-full px-5 py-3 text-base motion-preset-slide-right motion-ease-spring-bouncier motion-duration-1500 motion-delay-500 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ${
               state === "submitting" && "bg-blue-300"
             }`}
           >
